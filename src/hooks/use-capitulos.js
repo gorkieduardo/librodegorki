@@ -6,6 +6,7 @@ const useCapitulos = () => {
       allDatoCmsContenido {
         nodes {
           titulo
+          capresumen
           id
           slug
           capcontenido
@@ -21,6 +22,7 @@ const useCapitulos = () => {
 
   return data.allDatoCmsContenido.nodes.map(capitulo => ({
     titulo: capitulo.titulo,
+    capresumen: capitulo.capresumen,
     id: capitulo.id,
     capcontenido: capitulo.capcontenido,
     imagen: capitulo.imagen,

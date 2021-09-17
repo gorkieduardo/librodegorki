@@ -13,6 +13,8 @@ const EnlaceHome = styled(Link)`
 const Footer = ({ title }) => {
   const year = new Date().getFullYear()
   return (
+
+    
     <>
       <footer
         css={css`
@@ -36,7 +38,7 @@ const Footer = ({ title }) => {
           <Navegacion />
 
           <EnlaceHome to="/">
-            <h1>Filibusteros</h1>{" "}
+            <h1>EL BLOG DE GORKI</h1>{" "}
           </EnlaceHome>
         </div>
       </footer>
@@ -49,7 +51,7 @@ const Footer = ({ title }) => {
           padding: 1rem;
         `}
       >
-        {title} Todos los derechos Reservados -Eduardo Estrada M. {year} &copy;
+        {title}. - Todos los derechos Reservados - Eduardo Estrada M. {year} &copy;
       </p>
     </>
   )

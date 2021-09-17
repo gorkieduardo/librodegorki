@@ -22,7 +22,7 @@ const TextoInicio = styled.div`
 const ContenidoInicio = () => {
   const informacion = useStaticQuery(graphql`
     query {
-      allDatoCmsPagina(filter: { slug: { eq: "filibusteros" } }) {
+      allDatoCmsPagina(filter: { slug: { eq: "gorkiconferencia" } }) {
         nodes {
           titulo
           contenido
@@ -51,8 +51,8 @@ const ContenidoInicio = () => {
       </h2>
 
       <TextoInicio>
-        <p>{contenido}</p>
         <Image fluid={imagen.fluid} />
+        <p>{contenido}</p>
       </TextoInicio>
     </>
   )

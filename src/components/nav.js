@@ -34,10 +34,17 @@ const Navegacion = () => {
     <Nav>
       <NavLink to={"/"} activeClassName="pagina-actual">
         Inicio
+      </NavLink> 
+      <NavLink to={"/blog"} activeClassName="pagina-actual">
+        Blog
       </NavLink>
+
       <NavLink to={"/nosotros"} activeClassName="pagina-actual">
         Autor
       </NavLink>
+     
+     
+    
     </Nav>
   )
 }

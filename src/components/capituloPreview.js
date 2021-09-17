@@ -18,7 +18,7 @@ const Boton = styled(Link)`
 `
 
 const CapituloPreview = ({ capitulo }) => {
-  const { capcontenido, imagen, titulo, slug } = capitulo
+  const {  capresumen, imagen, titulo, slug } = capitulo
   return (
     <div
       css={css`
@@ -39,7 +39,7 @@ const CapituloPreview = ({ capitulo }) => {
         >
           {titulo}
         </h3>
-        <p>{capcontenido}</p>
+        <p>{capresumen}</p>
         <Boton to={slug}>Leer más</Boton>
       </div>
     </div>

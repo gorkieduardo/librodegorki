@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `El blog de Gorki`,
+    description: `Este es un blog dedicado a los saberes necesarios: leer, redactar, calcular, diseñar...`,
+    author: `@gorkieduardo`,
   },
   plugins: [
     "gatsby-plugin-emotion",
@@ -29,10 +29,21 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images\/incons/ 
+        }
+      }
+    },
+    {
       resolve: "gatsby-source-datocms",
       options: {
         apiToken: "7b9d88e12d19c7788b5780814e2718",
       },
+      
     },
+    
   ],
+  
 }

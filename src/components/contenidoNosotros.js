@@ -4,6 +4,9 @@ import Image from "gatsby-image"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 
+
+
+
 const Contenido = styled.main`
   padding-top: 4rem;
   max-width: 1200px;
@@ -54,7 +57,22 @@ const ContenidoNosotros = () => {
       <Contenido>
         <p> {contenido} </p>
         <Image fluid={imagen.fluid} />
+       
+       
       </Contenido>
+     
+      <div 
+        css={css`
+          margin: 0 auto;
+          max-width: 800px;
+          width: 95%;
+        `}
+      >
+          <a href="https://www.amazon.com/Eduardo-Estrada/e/B014RN41DM?ref=dbs_a_mng_rwt_scns_share">Ver libros en Amazon</a>
+     <br/>
+      <p>email: gorki.edurdo@gmail.com</p>
+      </div>
+      
     </>
   )
 }

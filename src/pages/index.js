@@ -2,7 +2,7 @@ import React from "react"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
-import ImagenHotel from "../components/imagenHotel"
+import ImagenFilibusteros from "../components/imagenFilbusteros"
 import ContenidoInicio from "../components/contenidoInicio"
 import CapituloPreview from "../components/capituloPreview"
 import useCapitulos from "../hooks/use-capitulos"
@@ -23,7 +23,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <ImagenHotel />
+      <ImagenFilibusteros />
       <ContenidoInicio />
 
       <h2

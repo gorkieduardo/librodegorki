@@ -9,8 +9,8 @@ const ImageBackground = styled(BackgroundImage)`
 const TextoImagen = styled.div`
   background-image: linear-gradient(
     to top,
-    rgba(158, 107, 45, 0.7),
-    rgba(167, 103, 60, 0.8)
+    rgba(158, 47, 45, 0.7),
+    rgba(67, 53, 160, 0.8)
   );
   color: #fff;
   height: 100%;
@@ -36,7 +36,7 @@ const TextoImagen = styled.div`
   }
 `
 
-const ImagenHotel = () => {
+const ImagenFilibusteros = () => {
   const { image } = useStaticQuery(graphql`
     query {
       image: file(relativePath: { eq: "8.jpg" }) {
@@ -54,14 +54,13 @@ const ImagenHotel = () => {
   return (
     <ImageBackground tag="section" fluid={image.sharp.fluid} fadeIn="soft">
       <TextoImagen>
-        <h1>Historia de la invasión filibustera a Centroamérica</h1>
+        <h1>Lectura, redacción y matemáticas...</h1>
         <p>
-          Una relato que permite comprender el dinámismo de la histoiria
-          nicaragüense
+          Un blog centrado en los saberes necesarios
         </p>
       </TextoImagen>
     </ImageBackground>
   )
 }
 
-export default ImagenHotel
+export default ImagenFilibusteros

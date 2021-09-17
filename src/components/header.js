@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header
       css={css`
-        background-color: rgb(33, 44, 55);
+        background-color: rgb(45, 44, 155);
         padding: 0.6rem;
       `}
     >
@@ -31,7 +31,7 @@ const Header = () => {
         `}
       >
         <EnlaceHome to="/">
-          <h1>FILIBUSTEROS</h1>
+          <h1>EL BLOG DE GORKI</h1>
         </EnlaceHome>
 
         <Navegacion />

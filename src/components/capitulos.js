@@ -25,13 +25,13 @@ const CapitulosTemplate = ({
     allDatoCmsContenido: { nodes },
   },
 }) => {
-  const { titulo, capcontenido, imagen } = nodes[0]
+  const { titulo,  capcontenido, imagen } = nodes[0]
   return (
     <Layout>
       <main
         css={css`
           margin: 0 auto;
-          max-width: 1200px;
+          max-width: 800px;
           width: 95%;
         `}
       >
@@ -45,7 +45,12 @@ const CapitulosTemplate = ({
         </h1>
         <p>{capcontenido}</p>
         <Image fluid={imagen.fluid} />
+        <a href="https://www.amazon.com/Eduardo-Estrada/e/B014RN41DM?ref=dbs_a_mng_rwt_scns_share">Ver libros en Amazon</a>
+     <br/>
+      <a href="gorki.eduardo@gmail.com">email: gorki.edurdo@gmail.com</a>
+        
       </main>
+    
     </Layout>
   )
 }
